@@ -1,0 +1,21 @@
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = AntonRufus
+	email = zhyvotovskyi@gmail.com
+[core]
+	autocrlt = true
+	longpaths = true
+	editor = code --wait
+[gui]
+	recentrepo = C:/Dev/test-repo-react-app-resume
+[credential]
+	helper = manager
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = "code --wait --diff $LOCAL $REMOTE"
